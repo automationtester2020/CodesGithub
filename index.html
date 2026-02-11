@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interview Studio – SaaS Color Palette</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4F46E5',
+            primaryLight: '#6366F1',
+            secondary: '#0F172A',
+            accent: '#22C55E',
+            warning: '#F59E0B',
+            danger: '#EF4444',
+            background: '#F8FAFC',
+            surface: '#FFFFFF',
+            border: '#E2E8F0',
+            textPrimary: '#0F172A',
+            textSecondary: '#475569'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-textPrimary font-sans">
+  <div class="max-w-5xl mx-auto p-8">
+    <h1 class="text-3xl font-bold mb-6">🎨 Interview Studio – SaaS UI Color Palette</h1>
+    <p class="text-textSecondary mb-10">A modern, professional palette for an AI interview platform.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Primary -->
+      <div class="bg-surface border border-border rounded-xl p-4 shadow">
+        <div class="h-24 rounded-lg bg-primary"></div>
+        <h2 class="font-semibold mt-3">Primary</h2>
+        <p class="text-sm text-textSecondary">#4F46E5</p>
+      </div>
+
+      <!-- Primary Light -->
+      <div class="bg-surface border border-border rounded-xl p-4 shadow">
+        <div class="h-24 rounded-lg bg-primaryLight"></div>
+        <h2 class="font-semibold mt-3">Primary Light</h2>
+        <p class="text-sm text-textSecondary">#6366F1</p>
+      </div>
+
+      <!-- Secondary -->
+      <div class="bg-surface border border-border rounded-xl p-4 shadow">
+        <div class="h-24 rounded-lg bg-secondary"></div>
+        <h2 class="font-semibold mt-3">Secondary</h2>
+        <p class="text-sm text-textSecondary">#0F172A</p>
+      </div>
+
+      <!-- Accent -->
+      <div class="bg-surface border border-border rounded-xl p-4 shadow">
+        <div class="h-24 rounded-lg bg-accent"></div>
+        <h2 class="font-semibold mt-3">Accent (Success)</h2>
+        <p class="text-sm text-textSecondary">#22C55E</p>
+      </div>
+
+      <!-- Warning -->
+      <div class="bg-surface border border-border rounded-xl p-4 shadow">
+        <div class="h-24 rounded-lg bg-warning"></div>
+        <h2 class="font-semibold mt-3">Warning</h2>
+        <p class="text-sm text-textSecondary">#F59E0B</p>
+      </div>
+
+      <!-- Danger -->
+      <div class="bg-surface border border-border rounded-xl p-4 shadow">
+        <div class="h-24 rounded-lg bg-danger"></div>
+        <h2 class="font-semibold mt-3">Danger</h2>
+        <p class="text-sm text-textSecondary">#EF4444</p>
+      </div>
+    </div>
+
+    <h2 class="text-2xl font-semibold mt-12 mb-4">UI Example</h2>
+    <div class="bg-surface border border-border rounded-xl p-6 shadow">
+      <h3 class="text-xl font-semibold">Interview Studio Dashboard</h3>
+      <p class="text-textSecondary mt-2">Practice AI-powered interviews and receive structured feedback.</p>
+      <div class="mt-4 flex gap-3">
+        <button class="px-4 py-2 bg-primary text-white rounded-lg">Start Interview</button>
+        <button class="px-4 py-2 bg-secondary text-white rounded-lg">View Feedback</button>
+        <button class="px-4 py-2 bg-danger text-white rounded-lg">Delete Account</button>
+      </div>
+    </div>
+
+    <p class="text-sm text-textSecondary mt-10">Built for Interview Studio (AI Interview Platform)</p>
+  </div>
+</body>
+</html>
